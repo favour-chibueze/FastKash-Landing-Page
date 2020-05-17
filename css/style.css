@@ -108,6 +108,9 @@ float: right;
 background: #FFFFFF;
 box-shadow: 12px 15px 65px rgba(0, 0, 0, 0.05);
 }
+.dark-mode .card {
+    background-color: hsl(232, 19%, 15%);
+}
 .card-content {
     padding: 28px;
 }
