@@ -145,7 +145,7 @@ li.register-btn:focus {
 }
 
 .how-it-works {
-    margin-top: 15%;
+    margin-top: 24%;
     text-align: center;
 }
 
@@ -325,6 +325,10 @@ label {
 
 footer {
     margin-top: -336px;
+}
+
+.footer-content {
+    margin-bottom: 100px;
 }
 
 .grid-container-3 {
@@ -561,12 +565,20 @@ h2 {
     footer {
         margin-top: -850px;
     }
+
+    .footer-content {
+        margin-bottom: 0px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
     ul.Navbar__Items, 
     .navbar{
         flex-direction: column;
+    }
+
+    ul.center-nav-links, ul.right-nav-links  {
+        align-self: baseline;
     }
 
     .Navbar__Items.Navbar__ToggleShow{
@@ -587,8 +599,5 @@ h2 {
 
     .fa-bars {
         color: #136630;
-    }
-    ul.center-nav-links, ul.right-nav-links  {
-        align-self: baseline;
     }
 }
