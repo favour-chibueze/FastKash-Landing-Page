@@ -12,86 +12,93 @@ body {
     margin: 0 auto;
 }
 
-
-/* nav {
-    margin-top: 35px;
-} */
+img.logo {
+    margin-left: 68px;
+    margin-top: 29px;
+    width: 109px;
+}
 
 .moon-solid {
-    float: right;
     cursor: pointer;
 }
 
-.Navbar {
-    background-color: white;
-    display: flex;
-    padding: 16px;
-    font-family: "Segoe UI";
+/* navbar */
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    justify-items: baseline;
+    flex-flow: wrap row;
 }
 
-
-/*sticky navbar */
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+ul.center-nav-links, 
+ul.right-nav-links{
+    list-style:none;
+    display: inline-block;
+    margin: 0px;
+    padding-right: 0px;
+    align-self:center;
+    height: fit-content;
 }
 
-.sticky+.my-text {
-    padding-top: 100px;
-}
-
-.Navbar__Link a {
-    margin-right: 25px;
+ul.center-nav-links a, 
+ul.right-nav-links a{
+    display: inline-block;
+    padding-right: 15px;
     text-decoration: none;
     color: #136630;
 }
 
-.Navbar__Link a:hover {
+ul.center-nav-links a:last-child,
+ul.right-nav-links a:last-child {
+    padding-right:0px;
+}
+
+ul.right-nav-links a:last-child {
+    padding-right: 32px;
+}
+
+/*sticky navbar */
+
+.sticky, nav#main-navbar {
+    position: fixed;
+    top: 0;
+    width: 101%;
+    background-color: #FFFFFF;
+    margin: 0;
+    margin-left: -13%;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.23);
+    height: 83px;
+}
+
+.sticky + .my-text, 
+nav#main-navbar + .my-text
+ {
+    padding-top: 100px;
+}
+
+ul.center-nav-links a:hover, 
+ul.right-nav-links a:hover {
     outline: 0;
     border-bottom: 4px solid #136630;
-    width: 10px;
     transition-timing-function: ease-out;
     transition: 0.25s;
-}
-
-.Navbar__Items {
-    display: flex;
-}
-
-.Navbar__Link.Navbar__Link-brand {
-    margin-right: 260px;
-}
-
-.Navbar__Items--right {
-    margin-left: auto;
+    /* width: 10px; */
 }
 
 .Navbar__Link-toggle {
     display: none;
 }
 
-nav.Navbar__Items {
-    text-align: center;
-    margin-top: 3%;
-}
-
-img.logo {
-    margin-left: 19px;
-    margin-top: 32px;
-    width: 109px;
-}
-
-a.register-btn {
+li.register-btn {
     background-color: #136630;
     color: white;
-    width: 37%;
-    padding: 8px;
+    width: 100%;
+    padding: 9px;
     border-radius: 20px;
+    text-align: center;
 }
 
-a.register-btn:focus {
+li.register-btn:focus {
     outline: none;
 }
 
@@ -380,13 +387,15 @@ h2 {
     background-color: hsl(232, 19%, 15%);
 }
 
-.dark-mode .Navbar__Link a:hover {
+.dark-mode ul.center-nav-links a:hover, 
+.dark-mode ul.right-nav-links a:hover {
     border-bottom: 4px solid #FFFFFF;
 }
 
 .dark-mode .learn-more:hover,
 .dark-mode .get-started:hover,
-.dark-mode .learn_more_btn:hover {
+.dark-mode .learn_more_btn:hover,
+.dark-mode nav#main-navbar {
     background-color: hsl(232, 19%, 15%);
 }
 
@@ -400,86 +409,112 @@ h2 {
     .container {
         margin: 29px 19px 14px 19px;
     }
-    .darkmode-icon {
-        margin-top: 10px;
-        margin-bottom: 5px;
-        ;
-    }
+    
     img.logo {
-        margin: 0;
+        margin-left: 19px;
+        margin-top: 34px;
     }
+    
+
     .Navbar__Link a {
         padding-right: 0;
     }
-    .Navbar__Link a:hover {
+
+    nav#main-navbar {
+        margin-left: -19px;
+    }
+
+    ul.center-nav-links a:hover, 
+    ul.right-nav-links a:hover{
         outline: 0;
         border-bottom: 4px solid #136630;
         width: 10px;
         transition-timing-function: ease-out;
         transition: 0.25s;
     }
+
     .Navbar__Link-toggle {
         color: #136630;
-        top: 75px;
-        left: 90px;
+        top: 32px;
+        left: 76%;
     }
-    a.register-btn {
+
+    li.register-btn {
         color: #136630;
         background-color: white;
         border: none;
         border-radius: 0;
         padding: 0;
     }
+
     img.macbook-image {
         width: 93%;
         height: 216px;
     }
+
     .macbook {
         width: 100%;
     }
+
     .my-text {
         position: none;
-        margin-top: -5%;
+        margin-top: 22%;
         left: 0;
     }
+    
     .how-it-works {
-        margin-top: -90%;
+        margin-top: -56%;
     }
+
     button.get-started.btn-btn {
         width: 38%;
     }
+
     .card {
         margin-top: 18px;
         width: 100%;
     }
+
     .card-content h1 {
         font-size: 22.0671px;
         margin-top: 19px;
     }
+
     .card-content img {
         width: 60%;
     }
+
     .card-content p {
         font-size: 12px;
     }
+
+    .card-content.card-3 {
+        margin-top: 14px;
+        padding: 36px;
+    }
+    
     .responsive-fit {
         margin-left: 15px;
     }
+
     .grid-content {
         padding: 10px;
     }
+
     img.companies {
         margin-right: 14px;
     }
+    
     img.companies.companies-logo {
         margin-top: 28px;
     }
+
     .grid-container-2 {
-        /* margin-top: 17px; */
         width: 100%;
         display: inline-grid;
         justify-content: center;
     }
+
     .form-container {
         width: 87%;
         margin-left: 6.57%;
@@ -487,55 +522,60 @@ h2 {
         margin-top: -20.95%;
         padding: 0;
     }
+
     .form-text {
         padding-top: 20px;
     }
+
     img.float {
         display: none;
     }
+
     .contact-text {
         margin-top: -114px;
         margin-left: 79px;
     }
+
     .contact-section {
         height: 316px;
         width: 100%;
     }
+
     h1.form-text {
         font-size: 16px;
     }
+
     .submit-btn {
         margin-bottom: 29px;
     }
+
     footer {
         margin-top: -850px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .Navbar__Items,
-    .Navbar {
+    ul.center-nav-links, 
+    ul.right-nav-links{
         flex-direction: column;
     }
-    .Navbar__Items {
+
+    ul.center-nav-links, 
+    ul.right-nav-links {
         display: none;
     }
-    .Navbar__Items--right {
-        margin-left: 0;
-    }
+
     .Navbar__ToggleShow {
         display: flex;
     }
-    nav.Navbar__Items.Navbar__Items--right {
-        text-align: center;
-    }
+
     .Navbar__Link-toggle {
         align-self: flex-end;
         display: initial;
         position: absolute;
         cursor: pointer;
-        margin-left: 40%;
     }
+
     .fa-bars {
         color: #136630;
     }

@@ -12,39 +12,30 @@
 
 <body>
     <div class="container">
-        <div class="Navbar" id="main-navbar">
-            <div class="Navbar__Link Navbar__Link-brand">
-                <div class="darkmode-icon"> <img src="images/moon-solid.svg" width="20" onclick="myFunction()"></div>
-                <img src="images/Group 27.png" alt="fastkash-logo" class="logo" width="150" />
-
-                <div class="Navbar__Link Navbar__Link-toggle" id="mobile-navbar">
+        <!-- NAVBAR -->
+         <header>
+			<nav class="navbar" id="main-navbar">
+				<div class="navbar-brand" id="navbar">
+					<a href=""><img src="images/Group 27.png" alt="fastkash-logo" class="logo" id="logo" width="150" /></a>
+                </div>
+                <div class="Navbar__Link-toggle" id="mobile-navbar">
+                    <img src="images/moon-solid.svg" width="20" class="moon-solid" onclick="myFunction()">
                     <i class="fa fa-bars fa-2x"></i>
                 </div>
-            </div>
+				<ul class="Navbar__Items center-nav-links">
+					<a href=""><li>How it Works</li></a>
+					<a href=""><li>Contact</li></a>
+					<a href=""><li>Blog</li></a>
+					<a href=""><li>FAQ</li></a>
+				</ul>
+				<ul class="Navbar__Items right-nav-links">
+                    <img src="images/moon-solid.svg" width="20" class="moon-solid" onclick="myFunction()">
+					<a href=""><li>SIGN IN</li></a>
+					<a href=""><li class="register-btn">REGISTER</li></a>
+				</ul>
+			</nav>
+		</header>
 
-            <nav class="Navbar__Items">
-                <div class="Navbar__Link">
-                    <a href="">How it Works</a>
-                </div>
-                <div class="Navbar__Link">
-                    <a href="">Contact</a>
-                </div>
-                <div class="Navbar__Link">
-                    <a href="">Blog</a>
-                </div>
-                <div class="Navbar__Link">
-                    <a href="">FAQ</a>
-                </div>
-            </nav>
-            <nav class="Navbar__Items Navbar__Items--right">
-                <div class="Navbar__Link">
-                    <a href="">SIGN IN</a>
-                </div>
-                <div class="Navbar__Link">
-                    <a href="" class="register-btn">REGISTER</a>
-                </div>
-            </nav>
-        </div>
 
         <main>
             <div class="main-content">
@@ -168,11 +159,11 @@
         </div>
     </div>
 
-    <div class="background">
-    </div>
 
     <footer>
         <div class="container">
+            <div class="background">
+            </div>
             <div class="brand about1"> <img src="images/fastkash 2.png" width="100" alt="fastkash-logo" /></div>
             <div class="row">
                 <div class="col grid-container-3">
@@ -209,14 +200,12 @@
     </div>
 
     <script>
-        function classToggle() {
-            const navs = document.querySelectorAll('.Navbar__Items')
+       function classToggle() {
+  const navs = document.querySelectorAll('.Navbar__Items')
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
 
-            navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-        }
-
-        document.querySelector('.Navbar__Link-toggle')
-            .addEventListener('click', classToggle);
+document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
 
         function myFunction() {
             let element = document.body;
@@ -237,6 +226,18 @@
                 navbar.classList.remove("sticky");
             }
         }
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    // document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.marginTop = "34px";
+  } else {
+    // document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.marginTop = "34px";
+  }
+}
     </script>
 </body>
 
