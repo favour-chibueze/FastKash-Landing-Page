@@ -9,21 +9,37 @@
 </head>
 <body>
     <div class="container">   
-    <nav>
-            <div class="moon-solid"> <img src="/images/moon-solid.svg" width="20" onclick="myFunction()"> </div>
-                <img src="./images/Group 27.png" alt="fastkash-logo" class="logo"/>
-
-            <div class="topnav nav-bar" id="myTopnav">
-            <div class="nav-link">
-                <a href="">How it Works</a>
-                <a href="">Contact</a>
-                <a href="">Blog</a>
-                <a href="">FAQ</a>
-                <div class="nav-link-2">
-            <a href="">SIGN IN</a>
-            <a href="" class="register-btn">REGISTER</a></div>
-        </div>
- </nav>
+ <div class="Navbar">
+    <div class="Navbar__Link Navbar__Link-brand">
+        <div class="darkmode-icon"> <img src="/images/moon-solid.svg" width="20" onclick="myFunction()"></div>
+        <img src="./images/Group 27.png" alt="fastkash-logo" class="logo" width="150"/>
+     </div>
+     <div class="Navbar__Link Navbar__Link-toggle">
+       <i class="fa fa-bars"></i>
+     </div>
+   <nav class="Navbar__Items">
+     <div class="Navbar__Link">
+        <a href="">How it Works</a>
+     </div>
+     <div class="Navbar__Link">
+        <a href="">Contact</a>
+     </div>
+     <div class="Navbar__Link">
+        <a href="">Blog</a>
+     </div>
+     <div class="Navbar__Link">
+        <a href="">FAQ</a>
+     </div>
+   </nav>
+   <nav class="Navbar__Items Navbar__Items--right">
+     <div class="Navbar__Link">
+        <a href="">SIGN IN</a>
+     </div>
+     <div class="Navbar__Link">
+        <a href="" class="register-btn">REGISTER</a>
+     </div>
+   </nav>
+ </div>
 
  <main>
      <div class="main-content">
@@ -120,12 +136,6 @@
 
             <div class="col-6 companies">
                 <div class="companies">
-<!-- <img src="/images/Frame 34.png" width="50%">
-<img class="companies companies-logo" src="/images/Vector.png" width="20%" height="21px">
-<img class="companies companies-logo" src="/images/Vector (1).png" width="20%" height="20px">
-<img class="companies" src="/images/Vector (2).png" width="20%" height="21px">
-<img class="companies" src="/images/Vector (4).png" width="20%" height="21px">
-<img class="companies" src="/images/Dropbox_logo_2017 1.png" width="20%" height="21px"> -->
 <img src="/images/partner 2.png" width="100%">
                 </div>
             </div>
@@ -198,14 +208,14 @@
 </div>
 
 <script>
-    function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+   function classToggle() {
+  const navs = document.querySelectorAll('.Navbar__Items')
+  
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
 }
+
+document.querySelector('.Navbar__Link-toggle')
+  .addEventListener('click', classToggle);
 
 function myFunction() {
             let element = document.body;

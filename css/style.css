@@ -9,44 +9,56 @@ body {
     max-width: 1180px;
     margin:0 auto;
 }
-nav {
+/* nav {
     margin-top: 35px;
-}
+} */
 .moon-solid {
     float: right;
     cursor: pointer;
 }
-.topnav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    list-style: none;
+
+.Navbar {
+    background-color: white;
+    display: flex;
+    padding: 16px;
+    font-family: "Segoe UI";
+  }
+  
+  .Navbar__Link  a{
+    margin-right: 25px;
+    text-decoration: none;
+    color: #136630;
+  }
+  .Navbar__Link a:hover {
+    outline: 0;
+  border-bottom: 4px solid #136630;
+  width: 10px;
+  transition-timing-function: ease-out;
+  transition: 0.25s;
+}
+  .Navbar__Items {
+    display: flex;
+  }
+  .Navbar__Link.Navbar__Link-brand {
+    margin-right: 260px;
 }
   
-  .topnav a{
-    float: left;
-    display: block;
-    padding: 8px;
-    font-family: Segoe UI;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 21px; 
-    margin-right: 11px;
-    color: #136630;
-    text-decoration: none;
+  .Navbar__Items--right {
+    margin-left:auto;
   }
-.nav-bar {
-    margin-top: -65px;
-    justify-content: center;
-}
-.nav-link {
-    margin-left: 34.87%;
-}
-  .nav-link-2 {
-float: right;
+  
+  .Navbar__Link-toggle {
+    display: none;
   }
+  nav.Navbar__Items {
+    text-align: center;
+    margin-top: 3%;
+}
+img.logo {
+    margin-left: 19px;
+    margin-top: 32px;
+    width: 109px;
+}
   a.register-btn{
     background-color: #136630;
     color: white;
@@ -78,7 +90,7 @@ float: right;
 }
 .my-text {
     display: inline-block;
-    top: 16%;
+    margin-top: 4%;
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: normal;
@@ -112,9 +124,6 @@ float: right;
     width: 100%;
 background: #FFFFFF;
 box-shadow: 12px 15px 65px rgba(0, 0, 0, 0.05);
-}
-.dark-mode .card {
-    background-color: hsl(232, 19%, 15%);
 }
 .card-content {
     padding: 28px;
@@ -287,6 +296,21 @@ footer {
   .text{
     color: #6D7783;  
   }
+  .dark-mode .card {
+    background-color: hsl(232, 19%, 15%);
+}
+.dark-mode .Navbar{
+    background-color: hsl(232, 19%, 15%);
+}
+.dark-mode a.register-btn {
+    background-color: hsl(232, 19%, 15%);
+}
+.dark-mode .Navbar__Link a:hover{
+    border-bottom: 4px solid #FFFFFF;
+}
+.dark-mode .learn-more:hover, .dark-mode .get-started:hover, .dark-mode .submit-btn:hover, .dark-mode .learn_more_btn:hover{
+    background-color: hsl(232, 19%, 15%);
+}
 
   /*RESPOSIVENESS */
   @media screen and (max-width: 600px) {
@@ -296,26 +320,33 @@ footer {
   .container {
     margin: 29px 19px 14px 19px;
   }
-  .topnav a{
-    text-align: center;
-    margin-right: 0;
+  .darkmode-icon {
+    margin-top: -24px;
   }
+  img.logo {
+      margin: 0;
+  }
+  .Navbar__Link a {
+     padding-right: 0; 
+  }
+  .Navbar__Link a:hover {
+    outline: 0;
+  border-bottom: 4px solid #136630;
+  width: 10px;
+  transition-timing-function: ease-out;
+  transition: 0.25s;
+}
+  .Navbar__Link {
+    margin-top: 11px;
+}
+
   a.register-btn {
-       width: 26%;
+    color: #136630;
+    background-color: white;
+    border: none;
+    border-radius: 0;
+    padding: 0;
   }
-  .nav-link {
-    margin-left: 1.87%;
-}
-.nav-link-2 {
-     margin-top: 0;
-    float: none; 
-}
-.nav-bar{
-    margin-top: 4px;
-}
-    img.logo {
-        width: 93px;
-    }
     img.macbook-image {
         width: 93%;
         height: 216px;
@@ -326,7 +357,7 @@ footer {
     }
     .my-text {
         position: none; 
-        top: 27%;
+        margin-top: -5%;
         left: 0;
 }
 .how-it-works {
@@ -360,9 +391,6 @@ img.companies {
 }
 img.companies.companies-logo {
     margin-top: 28px;
-}
-.opentable {
-    width: 69%;
 }
 .grid-container-2 {
     /* margin-top: 17px; */
@@ -398,4 +426,35 @@ h1.form-text {
 footer {
     margin-top: -484px;
 }
+  }
+
+  
+  
+  @media only screen and (max-width: 768px) {
+    .Navbar__Items,
+    .Navbar {
+      flex-direction: column;
+    }
+      
+  .Navbar__Items {
+      display:none;
+    }
+      
+  .Navbar__Items--right {
+      margin-left:0;
+    }
+      
+  .Navbar__ToggleShow {
+      display: flex;
+    }
+    nav.Navbar__Items.Navbar__Items--right {
+        text-align: center;
+    }
+      
+  .Navbar__Link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+     } 
   }
