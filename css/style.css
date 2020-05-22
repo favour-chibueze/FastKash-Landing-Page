@@ -321,10 +321,12 @@ label {
     background-position: center;
     background-repeat: no-repeat;
     height: 885px;
+    position: relative;
+    z-index: -1;
 }
 
 footer {
-    margin-top: -336px;
+    margin-top: -649px;;
 }
 
 .footer-content {
@@ -532,7 +534,7 @@ h2 {
         width: 87%;
         margin-left: 6.57%;
         margin-right: 6.57%;
-        margin-top: -20.95%;
+        margin-top: -33.95%;
         padding: 0;
     }
 
@@ -599,5 +601,17 @@ h2 {
 
     .fa-bars {
         color: #136630;
+    }
+}
+
+@media (min-height: 830px), (min-width: 600px) {
+    .how-it-works {
+        margin-top: 11%;
+    }
+    footer {
+        margin-top: -619px;
+    }
+    .footer-content {
+        margin-top: -109px;
     }
 }
