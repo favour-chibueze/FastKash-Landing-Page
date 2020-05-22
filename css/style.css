@@ -308,7 +308,7 @@ footer {
 .dark-mode .Navbar__Link a:hover{
     border-bottom: 4px solid #FFFFFF;
 }
-.dark-mode .learn-more:hover, .dark-mode .get-started:hover, .dark-mode .submit-btn:hover, .dark-mode .learn_more_btn:hover{
+.dark-mode .learn-more:hover, .dark-mode .get-started:hover, .dark-mode .learn_more_btn:hover{
     background-color: hsl(232, 19%, 15%);
 }
 
