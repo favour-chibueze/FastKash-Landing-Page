@@ -84,7 +84,8 @@ ul.right-nav-links a:hover {
     /* width: 10px; */
 }
 
-.Navbar__Link-toggle {
+.Navbar__Link-toggle, 
+.DarkMode-toggle {
     display: none;
 }
 
@@ -423,11 +424,14 @@ h2 {
     }
     
     .moon-solid {
-        margin-right: 15px;
+        margin-top: 6px; 
+        margin-left: -41px;
     }
+
     img.moon-solid.hide-icon-mobile{
         display: none;
     }
+
     .Navbar__Link a {
         padding-right: 0;
     }
@@ -457,7 +461,8 @@ h2 {
     li.center-nav-links a:hover {
         width: 20px;
     }
-    .Navbar__Link-toggle {
+    .Navbar__Link-toggle, 
+    .DarkMode-toggle {
         color: #136630;
         top: 32px;
         left: 76%;
@@ -598,7 +603,8 @@ h2 {
         display: none;
     }
 
-    .Navbar__Link-toggle {
+    .Navbar__Link-toggle,
+    .DarkMode-toggle {
         align-self: flex-end;
         display: initial;
         position: absolute;

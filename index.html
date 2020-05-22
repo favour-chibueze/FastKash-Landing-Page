@@ -18,8 +18,10 @@
 				<div class="navbar-brand" id="navbar">
 					<a href=""><img src="images/Group 27.png" alt="fastkash-logo" class="logo" id="logo" width="150" /></a>
                 </div>
+                <div class="DarkMode-toggle" id="mobile-navbar">
+                    <img src="images/moon-solid.svg" width="20" class="moon-solid" id="themeSwitch" onclick="myFunction()">
+                </div>
                 <div class="Navbar__Link-toggle" id="mobile-navbar">
-                   <img src="images/moon-solid.svg" width="20" class="moon-solid" onclick="myFunction()">
                    <i class="fa fa-bars fa-2x"></i>
                 </div>
 				<ul class="Navbar__Items center-nav-links">
@@ -213,7 +215,7 @@
             element.classList.toggle("dark-mode");
         }
 
-        window.onscroll = function() {
+     window.onscroll = function() {
             myNavbar()
         };
 
@@ -239,6 +241,8 @@
     document.getElementById("logo").style.marginTop = "34px";
   }
 }
+
+
     </script>
 </body>
 
