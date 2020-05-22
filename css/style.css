@@ -20,6 +20,7 @@ img.logo {
 
 .moon-solid {
     cursor: pointer;
+    margin-right: 15px;
 }
 
 /* navbar */
@@ -61,11 +62,10 @@ ul.right-nav-links a:last-child {
 
 .sticky, nav#main-navbar {
     position: fixed;
-    top: 0;
-    width: 101%;
+    left: 0;
+    right: 0;
     background-color: #FFFFFF;
-    margin: 0;
-    margin-left: -13%;
+    margin: 0 auto;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.23);
     height: 83px;
 }
@@ -411,13 +411,16 @@ h2 {
         margin-top: 34px;
     }
     
-
+    .moon-solid {
+        margin-right: 15px;
+    }
+    
     .Navbar__Link a {
         padding-right: 0;
     }
 
     nav#main-navbar {
-        margin-left: -19px;
+        top: 0;
     }
 
     ul.center-nav-links a:hover, 
