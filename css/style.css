@@ -6,7 +6,11 @@ body {
     background-color: hsl(232, 19%, 15%);
 }
 .container{
-    margin: 29px 79px 14px 79px;
+    max-width: 1180px;
+    margin:0 auto;
+}
+nav {
+    margin-top: 35px;
 }
 .moon-solid {
     float: right;
@@ -20,7 +24,7 @@ body {
     list-style: none;
 }
   
-  .topnav a, .register-btn{
+  .topnav a{
     float: left;
     display: block;
     padding: 8px;
@@ -33,12 +37,6 @@ body {
     color: #136630;
     text-decoration: none;
   }
-.topnav a:hover{
-    background-color: #136630;
-    color: white;
-    border-radius: 25%;
-    padding: 10px;
-}
 .nav-bar {
     margin-top: -65px;
     justify-content: center;
@@ -49,7 +47,16 @@ body {
   .nav-link-2 {
 float: right;
   }
-
+  a.register-btn{
+    background-color: #136630;
+    color: white;
+    width: 37%;
+    padding: 8px;
+    border-radius: 20px;
+  }
+  a.register-btn:focus{
+      outline: none;
+  }
  .btn-btn {
     background-color: #136630;
     color: white;
@@ -70,10 +77,8 @@ float: right;
     color: #136630;
 }
 .my-text {
-    text-align: center;
-    position: absolute;
+    display: inline-block;
     top: 16%;
-    left: 21%;
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: normal;
@@ -84,7 +89,7 @@ float: right;
     margin-bottom: 9.29%;
     width: 20%;
 }
-.get-started:hover {
+.get-started:hover, .register-btn {
     background-color:white;
     color: #136630;
     border: 1px solid #136630;
@@ -162,6 +167,18 @@ button{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+.companies {
+    display: flex;
+    flex-flow: wrap row;
+    }
+
+    img.companies {
+        margin-right: 22px;
+    }
+    .companies-logo{
+        margin-top: 73px;
+    }
+
 .contact-section {
     background-color: #136630;
     height: 342px;
@@ -223,9 +240,11 @@ label {
     font-size: 14px;
     font-weight: 400;
 }
+.submit {
+    text-align: center;
+}
 .submit-btn{
     margin-top: 48px;
-    margin-left: 183px;
     cursor: pointer;
 }
 .background{
@@ -236,7 +255,7 @@ label {
     height: 885px;
 }
 footer {
-    margin-top: -463px;
+    margin-top: -336px;
 }
 .grid-container-3  {
     display: grid;
@@ -284,6 +303,9 @@ footer {
     text-align: center;
     margin-right: 0;
   }
+  a.register-btn {
+       width: 19%;
+  }
   .nav-link {
     margin-left: 1.87%;
 }
@@ -302,7 +324,7 @@ footer {
         height: 216px;
     }
     .container {
-        margin: 25px 17px 14px 19px;
+        margin: 0 auto;
     }
     .my-text {
         position: none; 
@@ -330,12 +352,17 @@ button.get-started.btn-btn {
     font-size: 12px;
 }
 .responsive-fit {
-    width: 89%;
+    margin-left: 15px;
 }
 .grid-content {
     padding: 10px;
 }
-
+img.companies {
+    margin-right: 14px;
+}
+img.companies.companies-logo {
+    margin-top: 28px;
+}
 .opentable {
     width: 69%;
 }
