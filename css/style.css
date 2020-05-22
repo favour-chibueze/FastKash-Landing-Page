@@ -66,9 +66,8 @@ ul.right-nav-links a:last-child {
     right: 0;
     background-color: #FFFFFF;
     margin: 0 auto;
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.23);
-    height: 83px;
-}
+    /* box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.23);*/
+} 
 
 .sticky + .my-text, 
 nav#main-navbar + .my-text
@@ -155,6 +154,7 @@ li.register-btn:focus {
     font-size: 24px;
 }
 
+/* cards */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -200,10 +200,6 @@ li.register-btn:focus {
     margin-top: 49px;
     border-radius: 100px;
 }
-/* 
-.partners {
-    margin-left: 30px;
-} */
 
 .learn-more:hover,
 .submit-btn:hover,
@@ -262,6 +258,7 @@ img.companies {
     margin-left: 46px;
 }
 
+/* form */
 .form-container {
     padding: 52px;
     margin-left: 39.57%;
@@ -371,6 +368,8 @@ h2 {
     color: #6D7783;
 }
 
+/* darkmode */
+
 .dark-mode .card {
     background-color: hsl(232, 19%, 15%);
 }
@@ -391,7 +390,8 @@ h2 {
 .dark-mode .learn-more:hover,
 .dark-mode .get-started:hover,
 .dark-mode .learn_more_btn:hover,
-.dark-mode nav#main-navbar {
+.dark-mode nav#main-navbar, 
+.dark-mode li.register-btn {
     background-color: hsl(232, 19%, 15%);
 }
 
@@ -414,7 +414,9 @@ h2 {
     .moon-solid {
         margin-right: 15px;
     }
-    
+    img.moon-solid.hide-icon-mobile{
+        display: none;
+    }
     .Navbar__Link a {
         padding-right: 0;
     }
@@ -423,15 +425,23 @@ h2 {
         top: 0;
     }
 
+    ul.center-nav-links a, 
+    ul.right-nav-links a {
+    margin-top: 16px;
+    /* margin-right: 162px; */
+    }
+
     ul.center-nav-links a:hover, 
     ul.right-nav-links a:hover{
         outline: 0;
         border-bottom: 4px solid #136630;
-        width: 10px;
         transition-timing-function: ease-out;
         transition: 0.25s;
     }
-
+    
+    li.center-nav-links a:hover {
+        width: 20px;
+    }
     .Navbar__Link-toggle {
         color: #136630;
         top: 32px;
@@ -554,18 +564,18 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
-    ul.center-nav-links, 
-    ul.right-nav-links{
+    ul.Navbar__Items, 
+    .navbar{
         flex-direction: column;
     }
 
+    .Navbar__Items.Navbar__ToggleShow{
+        display: flex;
+        }
+    
     ul.center-nav-links, 
     ul.right-nav-links {
         display: none;
-    }
-
-    .Navbar__ToggleShow {
-        display: flex;
     }
 
     .Navbar__Link-toggle {
@@ -577,5 +587,8 @@ h2 {
 
     .fa-bars {
         color: #136630;
+    }
+    ul.center-nav-links, ul.right-nav-links  {
+        align-self: baseline;
     }
 }
