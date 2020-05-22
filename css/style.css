@@ -145,7 +145,7 @@ li.register-btn:focus {
 }
 
 .how-it-works {
-    margin-top: 24%;
+    margin-top: 286px;
     text-align: center;
 }
 
@@ -437,6 +437,10 @@ h2 {
     /* margin-right: 162px; */
     }
 
+    ul.right-nav-links a:last-child {
+        padding-bottom: 17px;
+    }
+
     ul.center-nav-links a:hover, 
     ul.right-nav-links a:hover{
         outline: 0;
@@ -478,7 +482,7 @@ h2 {
     }
     
     .how-it-works {
-        margin-top: -56%;
+        margin-top: -57px;
     }
 
     button.get-started.btn-btn {
@@ -507,10 +511,6 @@ h2 {
         margin-top: 14px;
         padding: 36px;
     }
-    
-    /* .responsive-fit {
-        margin-left: 15px;
-    } */
 
     .grid-content {
         padding: 10px;
@@ -579,7 +579,8 @@ h2 {
         flex-direction: column;
     }
 
-    ul.center-nav-links, ul.right-nav-links  {
+    ul.center-nav-links, 
+    ul.right-nav-links  {
         align-self: baseline;
     }
 
@@ -604,7 +605,7 @@ h2 {
     }
 }
 
-@media (min-height: 830px), (min-width: 600px) {
+/* @media (max-height: 830px), (max-width: 600px) {
     .how-it-works {
         margin-top: 11%;
     }
@@ -614,4 +615,4 @@ h2 {
     .footer-content {
         margin-top: -109px;
     }
-}
+} */
