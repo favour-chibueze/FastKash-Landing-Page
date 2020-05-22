@@ -324,7 +324,7 @@ footer {
         height: 216px;
     }
     .container {
-        margin: 0 auto;
+      margin: 29px 19px 14px 19px;
     }
     .my-text {
         position: none; 
@@ -395,7 +395,6 @@ h1.form-text {
     font-size: 16px;
 }
 .submit-btn {
-    margin-left: 65px;
     margin-bottom: 29px;
 }
   }
