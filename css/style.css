@@ -200,14 +200,10 @@ li.register-btn:focus {
     margin-top: 49px;
     border-radius: 100px;
 }
-
+/* 
 .partners {
     margin-left: 30px;
-}
-
-.about1 {
-    margin-left: 30px;
-}
+} */
 
 .learn-more:hover,
 .submit-btn:hover,
@@ -493,9 +489,9 @@ h2 {
         padding: 36px;
     }
     
-    .responsive-fit {
+    /* .responsive-fit {
         margin-left: 15px;
-    }
+    } */
 
     .grid-content {
         padding: 10px;
