@@ -402,6 +402,10 @@ h2 {
     background-color: hsl(232, 19%, 15%);
 }
 
+.dark-mode .how-it-works h1 {
+    color: #FFFFFF;
+}
+
 
 /*RESPOSIVENESS */
 
