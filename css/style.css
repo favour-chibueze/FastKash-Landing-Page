@@ -2,7 +2,6 @@ body {
     margin: 0;
     font-family: "Segoe UI";
 }
-<<<<<<< HEAD
 
 .dark-mode {
     background-color: hsl(232, 19%, 15%);
@@ -18,18 +17,6 @@ body {
     margin-top: 35px;
 } */
 
-=======
-.dark-mode {
-    background-color: hsl(232, 19%, 15%);
-}
-.container{
-    max-width: 1180px;
-    margin:0 auto;
-}
-/* nav {
-    margin-top: 35px;
-} */
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
 .moon-solid {
     float: right;
     cursor: pointer;
@@ -40,7 +27,6 @@ body {
     display: flex;
     padding: 16px;
     font-family: "Segoe UI";
-<<<<<<< HEAD
 }
 
 
@@ -91,57 +77,18 @@ nav.Navbar__Items {
     margin-top: 3%;
 }
 
-=======
-  }
-  
-  .Navbar__Link  a{
-    margin-right: 25px;
-    text-decoration: none;
-    color: #136630;
-  }
-  .Navbar__Link a:hover {
-    outline: 0;
-  border-bottom: 4px solid #136630;
-  width: 10px;
-  transition-timing-function: ease-out;
-  transition: 0.25s;
-}
-  .Navbar__Items {
-    display: flex;
-  }
-  .Navbar__Link.Navbar__Link-brand {
-    margin-right: 260px;
-}
-  
-  .Navbar__Items--right {
-    margin-left:auto;
-  }
-  
-  .Navbar__Link-toggle {
-    display: none;
-  }
-  nav.Navbar__Items {
-    text-align: center;
-    margin-top: 3%;
-}
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
 img.logo {
     margin-left: 19px;
     margin-top: 32px;
     width: 109px;
 }
-<<<<<<< HEAD
 
 a.register-btn {
-=======
-  a.register-btn{
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     background-color: #136630;
     color: white;
     width: 37%;
     padding: 8px;
     border-radius: 20px;
-<<<<<<< HEAD
 }
 
 a.register-btn:focus {
@@ -149,67 +96,40 @@ a.register-btn:focus {
 }
 
 .btn-btn {
-=======
-  }
-  a.register-btn:focus{
-      outline: none;
-  }
- .btn-btn {
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     background-color: #136630;
     color: white;
     border: none;
     border-radius: 30px;
     width: 105px;
     height: 40px;
-<<<<<<< HEAD
 }
 
 .background-image {
     background-image: url(../images/loans3-patternbg2\ 9.png);
-=======
-} 
-.background-image {
-    background-image: url(/images/loans3-patternbg2\ 9.png);
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 700px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
 .main-content {
     text-align: center;
     color: #136630;
 }
-<<<<<<< HEAD
 
 .my-text {
     display: inline-block;
     margin-top: 10%;
-=======
-.my-text {
-    display: inline-block;
-    margin-top: 4%;
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: normal;
 }
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
 .get-started {
     margin-top: 8.84%;
     margin-bottom: 9.29%;
     width: 20%;
 }
-<<<<<<< HEAD
 
 .get-started:hover,
 .register-btn {
@@ -229,28 +149,11 @@ a.register-btn:focus {
 }
 
 .grid-container {
-=======
-.get-started:hover, .register-btn {
-    background-color:white;
-    color: #136630;
-    border: 1px solid #136630;
-}
-.how-it-works {
-    margin-top: 11%;
-    text-align: center;
-}
-.how-it-works p{
-    color: #136630;
-    font-size: 24px;
-}
-.grid-container  {
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 64px;
     margin-top: 47px;
 }
-<<<<<<< HEAD
 
 .card {
     width: 100%;
@@ -263,32 +166,15 @@ a.register-btn:focus {
 }
 
 .card-content h1 {
-=======
-.card {
-    width: 100%;
-background: #FFFFFF;
-box-shadow: 12px 15px 65px rgba(0, 0, 0, 0.05);
-}
-.card-content {
-    padding: 28px;
-}
-.card-content h1{
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     font-size: 27.0671px;
     margin-top: 45px;
     color: #136630;
 }
 
-<<<<<<< HEAD
 .card-content p {
     font-size: 18px;
 }
 
-=======
-.card-content p{
-    font-size: 18px;
-}
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
 .card-content.card-3 {
     padding: 36px;
 }
@@ -296,25 +182,17 @@ box-shadow: 12px 15px 65px rgba(0, 0, 0, 0.05);
 .col-12.grid-container {
     column-gap: 263px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
 .para-text {
     margin-top: 47px;
     margin-bottom: 47px
 }
-<<<<<<< HEAD
 
 .learn-more {
-=======
-.learn-more{
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     width: 139px;
     margin-top: 49px;
     border-radius: 100px;
 }
-<<<<<<< HEAD
 
 .partners {
     margin-left: 30px;
@@ -332,19 +210,11 @@ box-shadow: 12px 15px 65px rgba(0, 0, 0, 0.05);
     border: 1px solid #136630;
 }
 
-=======
-.learn-more:hover, .submit-btn:hover, .learn_more_btn:hover{
-    background-color:white;
-    color: #136630;
-    border: 1px solid #136630;
-}
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
 .learn_more_btn {
     width: 139px;
     margin-top: 33px;
     border-radius: 100px;
 }
-<<<<<<< HEAD
 
 button:focus {
     outline: none;
@@ -369,26 +239,6 @@ img.companies {
 
 
 /* .companies-logo{
-=======
-button:focus {
-    outline: none;
-}
-button{
-    cursor: pointer;
-}
-.grid-container-2  {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.companies {
-   margin-top: 16px;
-    }
-
-    img.companies {
-        margin-right: 22px;
-    }
-    /* .companies-logo{
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
         margin-top: 73px;
     } */
 
@@ -402,22 +252,14 @@ button{
     float: right;
     margin-top: -49px;
 }
-<<<<<<< HEAD
 
 .contact-text {
-=======
-.contact-text{
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     margin-top: -108px;
     margin-left: 195px;
     color: white;
 }
-<<<<<<< HEAD
 
 .image-dotted {
-=======
-.image-dotted{
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     margin-top: 33px;
     margin-left: 46px;
 }
@@ -431,31 +273,21 @@ button{
     border-radius: 10px;
     box-shadow: 12px 15px 65px rgba(0, 0, 0, 0.05);
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
 .form-content {
     margin-top: 32px;
     margin-left: 40px;
     margin-right: 40px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
 h1.form-text {
     font-size: 23px;
     text-align: center;
     display: block;
 }
-<<<<<<< HEAD
 
 input[type="text"],
 input[type="email"] {
-=======
-input[type="text"], input[type="email"]{
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     outline: 0;
     border-width: 0 0 2px;
     border-color: #ccc;
@@ -464,7 +296,6 @@ input[type="text"], input[type="email"]{
     color: #ccc;
     font-family: "Segoe UI";
 }
-<<<<<<< HEAD
 
 input[type="email"] {
     margin-bottom: 14px;
@@ -474,20 +305,11 @@ input[type="email"] {
     color: #ccc;
 }
 
-=======
-input[type="email"] {
-    margin-bottom: 14px;
-}
-::placeholder{
-    color: #ccc;
-}
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
 label {
     color: #ccc;
     font-size: 14px;
     font-weight: 400;
 }
-<<<<<<< HEAD
 
 .submit {
     text-align: center;
@@ -500,35 +322,17 @@ label {
 
 .background {
     background-image: url(../images/loans3-patternbg2\ 10.png);
-=======
-.submit {
-    text-align: center;
-}
-.submit-btn{
-    margin-top: 48px;
-    cursor: pointer;
-}
-.background{
-    background-image: url(/images/loans3-patternbg2\ 10.png);
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 885px;
 }
-<<<<<<< HEAD
 
 footer {
     margin-top: -336px;
 }
 
 .grid-container-3 {
-=======
-footer {
-    margin-top: -336px;
-}
-.grid-container-3  {
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-column-gap: 78px;
@@ -537,7 +341,6 @@ footer {
 .icon {
     margin-right: 17px;
 }
-<<<<<<< HEAD
 
 .social-media-icons {
     margin-top: 40px;
@@ -549,22 +352,10 @@ footer {
 }
 
 .product-link a {
-=======
-.social-media-icons{
-    margin-top: 40px;
-}
-.product-link {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .product-link a {
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     display: block;
     color: #6D7783;
     padding: 16px;
     text-decoration: none;
-<<<<<<< HEAD
 }
 
 .product-link:hover a {
@@ -572,18 +363,10 @@ footer {
 }
 
 h2 {
-=======
-  }
-  .product-link:hover a {
-        cursor: pointer;
-  }
-  h2{
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     font-family: "Segoe UI";
     font-style: normal;
     font-weight: normal;
     color: #233D63;
-<<<<<<< HEAD
 }
 
 .text {
@@ -652,69 +435,10 @@ h2 {
         border-radius: 0;
         padding: 0;
     }
-=======
-  }
-
-  .text{
-    color: #6D7783;  
-  }
-  .dark-mode .card {
-    background-color: hsl(232, 19%, 15%);
-}
-.dark-mode .Navbar{
-    background-color: hsl(232, 19%, 15%);
-}
-.dark-mode a.register-btn {
-    background-color: hsl(232, 19%, 15%);
-}
-.dark-mode .Navbar__Link a:hover{
-    border-bottom: 4px solid #FFFFFF;
-}
-.dark-mode .learn-more:hover, .dark-mode .get-started:hover, .dark-mode .learn_more_btn:hover{
-    background-color: hsl(232, 19%, 15%);
-}
-
-  /*RESPOSIVENESS */
-  @media screen and (max-width: 600px) {
-  body {
-   overflow-x: hidden;
-  }
-  .container {
-    margin: 29px 19px 14px 19px;
-  }
-  .darkmode-icon {
-    margin-top: -24px;
-  }
-  img.logo {
-      margin: 0;
-  }
-  .Navbar__Link a {
-     padding-right: 0; 
-  }
-  .Navbar__Link a:hover {
-    outline: 0;
-  border-bottom: 4px solid #136630;
-  width: 10px;
-  transition-timing-function: ease-out;
-  transition: 0.25s;
-}
-  .Navbar__Link {
-    margin-top: 11px;
-}
-
-  a.register-btn {
-    color: #136630;
-    background-color: white;
-    border: none;
-    border-radius: 0;
-    padding: 0;
-  }
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     img.macbook-image {
         width: 93%;
         height: 216px;
     }
-<<<<<<< HEAD
     .macbook {
         width: 100%;
     }
@@ -806,108 +530,10 @@ h2 {
     }
     .Navbar__ToggleShow {
         display: flex;
-=======
-    
-    .macbook{
-        width: 100%;
-    }
-    .my-text {
-        position: none; 
-        margin-top: -5%;
-        left: 0;
-}
-.how-it-works {
-    margin-top: -90%;
-}
-button.get-started.btn-btn {
-    width: 38%;
-}
-.card {
-    margin-top: 18px;
-    width: 100%;
-}
-.card-content h1 {
-    font-size: 22.0671px;
-    margin-top: 19px;
-}
-.card-content img {
-    width: 60%;
-}
-.card-content p {
-    font-size: 12px;
-}
-.responsive-fit {
-    margin-left: 15px;
-}
-.grid-content {
-    padding: 10px;
-}
-img.companies {
-    margin-right: 14px;
-}
-img.companies.companies-logo {
-    margin-top: 28px;
-}
-.grid-container-2 {
-    /* margin-top: 17px; */
-    width: 100%;
-    display: inline-grid;
-    justify-content: center;
-}
-.form-container {
-    width: 87%;
-    position: absolute;
-    margin-left: 6.57%;
-    margin-right: 6.57%;
-    margin-top: -20.95%;
-    padding: 0;
-}
-img.float {
-    display: none;
-}
-.contact-text {
-    margin-top: -114px;
-    margin-left: 79px;
-}
-.contact-section {
-    height: 316px;
-    width: 100%;
-}
-h1.form-text {
-    font-size: 16px;
-}
-.submit-btn {
-    margin-bottom: 29px;
-}
-footer {
-    margin-top: -484px;
-}
-  }
-
-  
-  
-  @media only screen and (max-width: 768px) {
-    .Navbar__Items,
-    .Navbar {
-      flex-direction: column;
-    }
-      
-  .Navbar__Items {
-      display:none;
-    }
-      
-  .Navbar__Items--right {
-      margin-left:0;
-    }
-      
-  .Navbar__ToggleShow {
-      display: flex;
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
     }
     nav.Navbar__Items.Navbar__Items--right {
         text-align: center;
     }
-<<<<<<< HEAD
     .Navbar__Link-toggle {
         align-self: flex-end;
         display: initial;
@@ -919,13 +545,3 @@ footer {
         color: #136630;
     }
 }
-=======
-      
-  .Navbar__Link-toggle {
-      align-self: flex-end;
-      display: initial;
-      position: absolute;
-      cursor: pointer;
-     } 
-  }
->>>>>>> dbef7f74ebfdbe0749f7b61f99504ea72f102605
